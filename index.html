@@ -1,35 +1,117 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Talkbridge — Privacy Policy</title>
-<style>body{max-width:720px;margin:40px auto;padding:0 20px;font:16px/1.6 system-ui,sans-serif;color:#1b1b18}h1{font-size:28px}h2{font-size:18px;margin-top:28px}</style></head>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Talkbridge — live voice translator for Google Meet</title>
+<meta name="description" content="Two-way live voice translation in Google Meet: hear others in your language, they hear you in theirs. Bring your own OpenAI or Gemini key. Free trial, no servers in between.">
+<link rel="canonical" href="https://heyneuron.github.io/talkbridge-legal/">
+<meta property="og:title" content="Talkbridge — live voice translator for Google Meet">
+<meta property="og:description" content="Two-way live voice translation in Google Meet. Your OpenAI or Gemini key, nothing passes through our servers.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Newsreader:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14110f;--paper:#f4efe6;--card:#fffaf0;--accent:#e8541e;--mute:#6b6258;--line:#d9d0c1}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.6 'Newsreader',Georgia,serif;
+background-image:radial-gradient(circle at 85% -10%,#f6c9a9 0,transparent 45%),radial-gradient(circle at -10% 40%,#e9dcc3 0,transparent 40%)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+h1,h2,h3,.btn,.tag{font-family:'Bricolage Grotesque',system-ui,sans-serif}
+header{padding:28px 0;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:700;font-size:20px;letter-spacing:-.02em}
+.logo b{color:var(--accent)}
+nav a{color:var(--mute);text-decoration:none;margin-left:20px;font:500 15px 'Bricolage Grotesque',sans-serif}
+nav a:hover{color:var(--ink)}
+.hero{padding:56px 0 40px}
+.tag{display:inline-block;border:1px solid var(--ink);border-radius:99px;padding:4px 14px;font-size:14px;font-weight:500}
+h1{font-size:clamp(40px,7vw,76px);line-height:1;letter-spacing:-.04em;margin:22px 0 20px;max-width:14ch}
+h1 em{font-family:'Newsreader',serif;font-style:italic;font-weight:400;color:var(--accent)}
+.lead{font-size:22px;max-width:36ch;color:#3a342d;margin:0 0 30px}
+.btn{display:inline-block;background:var(--ink);color:var(--paper);text-decoration:none;padding:14px 26px;border-radius:12px;font-weight:700;font-size:16px;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px);background:var(--accent)}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink);margin-left:10px}
+.btn.alt:hover{background:var(--ink);color:var(--paper)}
+.demo{margin:46px 0;background:var(--card);border:2px solid var(--ink);border-radius:20px;padding:26px;box-shadow:8px 8px 0 var(--ink);display:grid;gap:14px}
+.line{display:flex;gap:12px;align-items:baseline;animation:rise .6s both}
+.line:nth-child(2){animation-delay:.25s}.line:nth-child(3){animation-delay:.5s}.line:nth-child(4){animation-delay:.75s}
+.who{font:700 13px 'Bricolage Grotesque',sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);min-width:64px}
+.orig{color:var(--mute);font-style:italic}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+section{padding:36px 0}
+h2{font-size:clamp(28px,4vw,40px);letter-spacing:-.03em;margin:0 0 22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.card h3{margin:0 0 6px;font-size:20px;letter-spacing:-.02em}
+.card p{margin:0;color:#3a342d;font-size:17px}
+.price{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.price .card.big{border:2px solid var(--ink);box-shadow:6px 6px 0 var(--accent)}
+.n{font:700 34px 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:28px 0 50px;color:var(--mute);font-size:15px}
+footer a{color:var(--mute)}
+@media (prefers-reduced-motion:reduce){.line{animation:none}}
+@media (max-width:560px){nav{display:none}.btn.alt{margin:10px 0 0}}
+</style>
+</head>
 <body>
-<h1>Talkbridge — Privacy Policy</h1>
-<p>Last updated: 18 November 2026</p>
-<p>Talkbridge is a browser extension made by BIG GROWTH Sp. z o.o. (HeyNeuron, <a href="https://heyneuron.com">heyneuron.com</a>). It translates your Google Meet calls live.</p>
+<div class="wrap">
+<header>
+  <div class="logo">talk<b>bridge</b></div>
+  <nav><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="privacy.html">Privacy</a></nav>
+</header>
 
-<h2>What the extension processes</h2>
-<ul>
-<li><b>Call audio</b>: your microphone and the audio of other participants, while translation is running.</li>
-<li><b>Captions and transcripts</b>: the text of the translation.</li>
-<li><b>Settings</b>: languages, options, your API keys and license key.</li>
-<li><b>Usage counter</b>: minutes and estimated cost.</li>
-</ul>
+<main>
+<div class="hero">
+  <span class="tag">Chrome extension · Google Meet</span>
+  <h1>Speak your language. <em>They hear theirs.</em></h1>
+  <p class="lead">Live two-way voice translation in Google Meet. Nobody else has to install anything.</p>
+  <a class="btn" href="https://chromewebstore.google.com/detail/talkbridge-%E2%80%94-live-voice-t/lmlpbglenbmobhmfgiobhgnfafkkkhic">Add to Chrome</a>
+  <a class="btn alt" href="https://heyneuron.gumroad.com/l/talkbridge">Get a license key</a>
+</div>
 
-<h2>Where it goes</h2>
-<p>Audio is sent straight from your browser to the translation engine you choose, using your own API key:</p>
-<ul>
-<li>OpenAI (api.openai.com), under the <a href="https://openai.com/policies/privacy-policy">OpenAI privacy policy</a>, or</li>
-<li>Google Gemini API (generativelanguage.googleapis.com), under the <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a>.</li>
-</ul>
-<p>The license key is checked with Gumroad (api.gumroad.com). Gumroad receives only the key.</p>
-<p><b>We run no servers for this extension.</b> We do not receive, store or sell your audio, transcripts, keys or any personal data. There is no analytics or tracking.</p>
+<div class="demo" aria-label="Example of a translated call">
+  <div class="line"><span class="who">You</span><span>Dzień dobry, zacznijmy od budżetu na ten kwartał.</span></div>
+  <div class="line"><span class="who">They hear</span><span>Good morning, let's start with the budget for this quarter.</span></div>
+  <div class="line"><span class="who">They</span><span class="orig">Sounds good, we can share the numbers right now.</span></div>
+  <div class="line"><span class="who">You hear</span><span>Brzmi dobrze, możemy od razu pokazać liczby.</span></div>
+</div>
 
-<h2>Stored on your device</h2>
-<p>Settings, keys, the usage counter and the last 20 transcripts are kept in the extension's local storage on your computer. You can delete transcripts in the settings. Uninstalling the extension removes everything.</p>
+<section id="how">
+  <h2>How it works</h2>
+  <div class="grid">
+    <div class="card"><h3>Both directions</h3><p>You hear the other side in your language, with translated voice and captions. They hear your translated voice as your microphone.</p></div>
+    <div class="card"><h3>Straight to the engine</h3><p>Audio goes from your browser to OpenAI or Google Gemini Live with your own API key. Nothing passes through our servers.</p></div>
+    <div class="card"><h3>2–3 seconds behind</h3><p>Translation follows the speaker with a delay of about two to three seconds, in any Google Meet call.</p></div>
+  </div>
+</section>
 
-<h2>Your responsibility</h2>
-<p>Recording and translating other people's speech may require their consent where you live. Tell the other participants that you are using live translation.</p>
+<section>
+  <h2>What you get</h2>
+  <div class="grid">
+    <div class="card"><h3>30+ languages</h3><p>With Gemini. 14 with OpenAI.</p></div>
+    <div class="card"><h3>Glossary</h3><p>Names and jargon stay the way you want them.</p></div>
+    <div class="card"><h3>Transcripts</h3><p>Every call, downloadable as Markdown.</p></div>
+    <div class="card"><h3>Captions</h3><p>Live captions, plus large captions over the video.</p></div>
+    <div class="card"><h3>Cost counter</h3><p>See minutes and estimated spend as you talk.</p></div>
+    <div class="card"><h3>Echo protection</h3><p>Speaker and headphone modes, original-voice volume.</p></div>
+  </div>
+</section>
 
-<h2>Contact</h2>
-<p>BIG GROWTH Sp. z o.o. · <a href="mailto:hi@heyneuron.com">hi@heyneuron.com</a> · <a href="https://heyneuron.com">heyneuron.com</a></p>
-</body></html>
+<section id="pricing">
+  <h2>Pricing</h2>
+  <div class="price">
+    <div class="card big"><div class="n">60 min free</div><p>Try it on real calls first. No card needed.</p></div>
+    <div class="card"><div class="n">Pay what you want</div><p>After the trial, a license key from Gumroad. Free or any price you choose.</p></div>
+    <div class="card"><div class="n">Your API key</div><p>Engines are billed by the provider: Gemini has a free tier, OpenAI is about $0.03–0.04 per minute per direction.</p></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  Made by <a href="https://heyneuron.com">HeyNeuron</a> (BIG GROWTH Sp. z o.o., Kraków). Talkbridge supports Google Meet only for now. Not affiliated with Google. Google Meet is a trademark of Google LLC. · <a href="privacy.html">Privacy policy</a>
+</footer>
+</div>
+</body>
+</html>
